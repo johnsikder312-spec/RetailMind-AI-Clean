@@ -152,9 +152,10 @@ def create_app(config_class=Config):
     atexit.register(shutdown_scheduler)
     
     return app
-   app = create_app()
 
-if __name__ == "__main__":
+
+if __name__ == '__main__':
+    app = create_app()
     print("\n" + "=" * 50)
     print("RetailMind AI - Backend Server")
     print("Running on: http://localhost:5000")
