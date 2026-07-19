@@ -1,0 +1,3 @@
+"""
+RetailMind AI - Database Package
+"""
