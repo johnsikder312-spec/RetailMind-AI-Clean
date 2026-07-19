@@ -152,13 +152,12 @@ def create_app(config_class=Config):
     atexit.register(shutdown_scheduler)
     
     return app
+   app = create_app()
 
-
-if __name__ == '__main__':
-    app = create_app()
+if __name__ == "__main__":
     print("\n" + "=" * 50)
-    print("  RetailMind AI - Backend Server")
-    print("  Running on: http://localhost:5000")
-    print("  API Docs:   http://localhost:5000/api/health")
+    print("RetailMind AI - Backend Server")
+    print("Running on: http://localhost:5000")
+    print("API Docs: http://localhost:5000/api/health")
     print("=" * 50 + "\n")
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
